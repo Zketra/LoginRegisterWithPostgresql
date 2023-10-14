@@ -10,11 +10,6 @@ load_dotenv('.env')
 
 print('Loading')
 
-# for _ in range(3):
-    # time.sleep(.5)
-    # sys.stdout.write('.')
-    # sys.stdout.flush()
-
 conn = psycopg2.connect(
         host=os.getenv("HOST"),
         dbname=os.getenv("DBNAME"),
@@ -63,10 +58,6 @@ def login(usrname):
         else:
             print("password wrong")
 
-
-
-print("")
-print("LOG: LOADING DEPENDENCIES")
 
 wunch = input("LOGIN OR REGISTER [L/R]: ")
 wunch = wunch.capitalize()

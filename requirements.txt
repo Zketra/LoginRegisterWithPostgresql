@@ -1,0 +1,4 @@
+graphene
+psycopg2
+getpass
+python-dotenv
